@@ -69,7 +69,7 @@ console.log(boyosh)
 
 ```syl
 ikta amar bawandari greet(ke) {
-  dekaw cain 'Areh, ' + ke + '!'
+  dekaw cain('Areh, ' + ke + '!')
 }
 ```
 
@@ -94,7 +94,7 @@ function greet(ke) {
 ikta amar bawandari add(x, y) {
   okta pataw x + y
 }
-dekaw cain add(3, 5)
+dekaw cain(add(3, 5))
 ```
 
 **Output:**
@@ -116,7 +116,7 @@ dekaw cain add(3, 5)
 
 ```syl
 jodi okta oy (boyosh > 18) {
-  dekaw cain 'Adult'
+  dekaw cain('Adult')
 }
 ```
 
@@ -131,9 +131,9 @@ jodi okta oy (boyosh > 18) {
 
 ```syl
 jodi okta oy (boyosh > 18) {
-  dekaw cain 'Adult'
+  dekaw cain('Adult')
 } ar na oile {
-  dekaw cain 'Child'
+  dekaw cain('Child')
 }
 ```
 
@@ -148,7 +148,7 @@ jodi okta oy (boyosh > 18) {
 
 ```syl
 lesri calaw (let i = 0; i < 5; i++) {
-  dekaw cain i
+  dekaw cain(i)
 }
 ```
 
@@ -177,9 +177,9 @@ lesri calaw (let i = 0; i < 5; i++) {
 ```syl
 vaisab ow new status = hasa
 jodi okta oy (status) {
-  dekaw cain 'All good!'
+  dekaw cain('All good!')
 } ar na oile {
-  dekaw cain 'Something wrong!'
+  dekaw cain('Something wrong!')
 }
 ```
 
@@ -201,19 +201,19 @@ vaisab ow new boyosh = 20
 vaisab ow new adult = hasa
 
 ikta amar bawandari greet() {
-  dekaw cain 'Areh, ' + nam + '!'
+  dekaw cain('Areh, ' + nam + '!')
 }
 
 greet()
 
 jodi okta oy (boyosh >= 18 ar adult) {
-  dekaw cain 'Adult Sylheti!'
+  dekaw cain('Adult Sylheti!')
 } ar na oile {
-  dekaw cain 'Young Sylheti!'
+  dekaw cain('Young Sylheti!')
 }
 
 lesri calaw (let i = 0; i < 3; i++) {
-  dekaw cain 'Count: ' + i
+  dekaw cain('Count: ' + i)
 }
 ```
 
@@ -284,3 +284,5 @@ Areh, Asfak!
 3. Loops, functions, and conditionals follow the `{ }` style like JavaScript.
 4. You can combine keywords: `jodi okta oy (condition ar status)` → `if (condition && status)`.
 5. Test small code in your web playground before running in terminal.
+
+## Made with ❤️ by [Asfak](https://github.com/asfak00)
